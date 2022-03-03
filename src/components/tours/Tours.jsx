@@ -1,20 +1,14 @@
 import React from 'react';
+import Tour from './tour/Tour';
 import "./tours.css";
 
-const Tours = (props) => {
+let Tours = ({data}) => {
     return (
         <>
             {
-                props.tours.map((tour, index) => {
+               data.map((city , index) => {
                     return (
-                        <div key={index}>
-                            <div className="bodyDiv">
-                                <h2>{tour.name}</h2>
-                                <img src={tour.image} alt="img" />
-                            </div>
-                            <hr />
-
-                        </div>
+                        <Tour key={index} city = {city} />
                     )
 
                 })
