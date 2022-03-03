@@ -1,14 +1,10 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import React from "react";
 import "./header.css";
+import Navbar from "../navbar/Navbar";  
 
 function Header() {
-    return (<nav className='headerStyle'>
-        <div className='linkStyle'>
-        <Link to='/'>Home</Link>
-        <Link to='/city/:id'>Tourdetails</Link>
-        </div>
-    </nav>
+    return (
+        <Navbar/>
 
     )
 };
