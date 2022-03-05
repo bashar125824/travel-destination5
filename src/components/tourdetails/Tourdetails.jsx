@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
+import "./tourdetails.css";
 
 function Tourdetails({ data }) {
     let { id } = useParams();
@@ -18,8 +19,10 @@ function Tourdetails({ data }) {
             <Header></Header>
             <article>
                 <div>
-                    {city[0].name}
+                    <p>{city[0].name}</p>
+                    <hr />
                     {city[0].info}
+                    <hr />
 
                     <img src={city[0].image} />
 

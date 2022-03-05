@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import "./tour.css";
 
-export default function Tour(city){
+export default function Tour({city}){
     return (
         <div className="bodyDiv">
             <h2>{city.name}</h2>
